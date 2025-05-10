@@ -60,6 +60,28 @@ nav ul li a:hover {
 }
 
 
+
+.menu-item {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(142, 143, 75, 0.39);
+  transition: transform 0.2s;
+}
+
+.menu-item img {
+  width: 100%;
+  aspect-ratio: 4/3; /* ensures consistent image ratio */
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
 .menu-section {
   display: flex;
   flex-wrap: wrap;
@@ -331,4 +353,14 @@ footer {
 
 
 
+@media (max-width: 768px) {
+  .menu-item {
+    max-width: 45%;
+  }
+}
+@media (max-width: 480px) {
+  .menu-item {
+    max-width: 90%;
+  }
+}
 
